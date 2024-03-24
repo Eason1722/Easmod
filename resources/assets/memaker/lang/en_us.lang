@@ -1,0 +1,7 @@
+#items
+item.water_bottle.name= Water Bottle
+item.explosion_apple.name=Explosion Apple
+#item tabs
+itemGroup.eostt_tabs=Eason1722's mod
+#blocks
+tile.cfe_block.name=CFe Block

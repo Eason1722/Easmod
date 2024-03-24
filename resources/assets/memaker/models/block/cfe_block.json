@@ -1,0 +1,6 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "memaker:blocks/cfe_block"
+  }
+}

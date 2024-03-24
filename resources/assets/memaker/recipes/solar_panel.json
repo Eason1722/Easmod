@@ -1,0 +1,44 @@
+{
+  "type": "minecraft:crafting_shaped",
+
+
+  "pattern":
+  [
+    "RQR",
+    "TRT",
+    "TGT"
+  ],
+
+  "key":
+  {
+    "Q":
+    {
+    "item": "minecraft:glass"
+    },
+    "R":
+    {
+      "item": "minecraft:quartz "
+
+    },
+    "T":
+    {
+      "item": "minecraft:iron_ingot"
+
+    },
+    "G":
+    {
+      "item": "memaker:water_bottle"
+
+    }
+
+  },
+
+
+  "result":
+  {
+    "item": "memaker:solar_panel",
+
+    "count": 1
+
+  }
+}

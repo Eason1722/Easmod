@@ -1,0 +1,6 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "memaker:items/explosion_apple"
+  }
+}
