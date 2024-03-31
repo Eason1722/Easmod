@@ -55,5 +55,11 @@ public class BottleBase extends ItemBow implements IHasModel {
             i = net.minecraftforge.event.ForgeEventFactory.onArrowLoose(stack, worldIn, entityplayer, i, true);
            ThirstyValue thirstyValue= entityplayer.getCapability(ThirstyValue.THIRSTY_VALUE,null);
             if (i < 0) return;
+            if (thirstyValue.getThirstyValue()+i>72000) {
+                thirstyValue.setThirstyValue(thirstyValue.getThirstyValue() + i);
+            }else{
+                thirstyValue.setThirstyValue(72000);
+            }
+
     }
 }}
