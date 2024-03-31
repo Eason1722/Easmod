@@ -1,6 +1,7 @@
 package com.eostt.memaker.items;
 
 import com.eostt.memaker.Main;
+import com.eostt.memaker.capability.ThirstyValue;
 import com.eostt.memaker.init.ModItems;
 import com.eostt.memaker.util.IHasModel;
 import net.minecraft.creativetab.CreativeTabs;
@@ -15,6 +16,7 @@ import net.minecraft.util.ActionResult;
 import net.minecraft.util.EnumActionResult;
 import net.minecraft.util.EnumHand;
 import net.minecraft.world.World;
+import net.minecraftforge.common.capabilities.Capability;
 import net.minecraftforge.fluids.FluidStack;
 import net.minecraftforge.fluids.FluidTankInfo;
 import net.minecraftforge.fluids.FluidUtil;
@@ -50,6 +52,7 @@ public class BottleBase extends ItemBow implements IHasModel {
 //            boolean flag = entityplayer.capabilities.isCreativeMode || EnchantmentHelper.getEnchantmentLevel(Enchantments.INFINITY, stack) > 0;
             int i = this.getMaxItemUseDuration(stack) - timeLeft;
             i = net.minecraftforge.event.ForgeEventFactory.onArrowLoose(stack, worldIn, entityplayer, i, true);
+           ThirstyValue thirstyValue= entityplayer.getCapability(ThirstyValue.THIRSTY_VALUE,null);
             if (i < 0) return;
     }
 }}

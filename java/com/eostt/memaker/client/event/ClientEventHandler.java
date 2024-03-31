@@ -16,7 +16,7 @@ import net.minecraftforge.fml.relauncher.SideOnly;
 
 @Mod.EventBusSubscriber
 public class ClientEventHandler {
-    private static final ResourceLocation TEXTURE_THV=new ResourceLocation(Reference.Mod_ID+":txtures/gui/overlay_thv");
+    private static final ResourceLocation TEXTURE_THV=new ResourceLocation(Reference.Mod_ID+":textures/gui/overlay_thv.png");
     @SubscribeEvent
     @SideOnly(Side.CLIENT)
     public static void onRenderGameOverlayPost(RenderGameOverlayEvent.Post event){
@@ -28,8 +28,14 @@ public class ClientEventHandler {
             GlStateManager.enableBlend();
             if(entity instanceof EntityPlayer) {
                 {
-                    mc.ingameGUI.drawTexturedModalRect(width / 2 - 175, height - 40, 0, 4, 40, 80);
-                    mc.ingameGUI.drawString(mc.fontRenderer, "" + entity.getCapability(ThirstyValue.THIRSTY_VALUE, null).getThirstyValue(), width / 2 - 125, height - 36, 0xffffff);
+                    mc.getTextureManager().bindTexture(TEXTURE_THV);
+                    ThirstyValue thv=entity.getCapability(ThirstyValue.THIRSTY_VALUE,null);
+                    float thirstyValue = 0;
+                    if (thv != null) {
+                        thirstyValue = thv.getThirstyValue();
+                    }//aminoac
+                    mc.ingameGUI.drawTexturedModalRect(0, height - 40, 0, 4, 20,36);
+                    mc.ingameGUI.drawString(mc.fontRenderer, ("thirsty value    "+thirstyValue ), 50, height - 24, 0xffffff);
                 }
             }
         }

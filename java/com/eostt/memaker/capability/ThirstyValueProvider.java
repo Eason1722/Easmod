@@ -42,10 +42,10 @@ public class ThirstyValueProvider implements ICapabilitySerializable<NBTTagCompo
         this.instance.deserializeNBT(nbt);
     }
     @SubscribeEvent
-    public static void onAttackCapability(AttachCapabilitiesEvent<Entity> event){
+    public static void onAttachCapability(AttachCapabilitiesEvent<Entity> event){
         if(event.getObject() instanceof EntityPlayer) {
             ThirstyValueProvider thirstyValue = new ThirstyValueProvider();
-            event.addCapability(new ResourceLocation(Reference.Mod_ID + ":thirsty_value"), thirstyValue);
+            event.addCapability(new ResourceLocation(Reference.Mod_ID + ":thirstyValue"), thirstyValue);
         }
     }
     @SubscribeEvent

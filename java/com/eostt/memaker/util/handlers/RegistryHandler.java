@@ -22,6 +22,8 @@ import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 
 @EventBusSubscriber
 public class RegistryHandler {
+
+
     @SubscribeEvent
     public static void onCapabilityRegister(RegistryEvent.Register<Potion> event){
         CapabilityManager.INSTANCE.register(ThirstyValue.class, new Capability.IStorage<ThirstyValue>() {
