@@ -3,6 +3,7 @@ import com.eostt.memaker.capability.ThirstyValue;
 import com.eostt.memaker.init.ModBlocks;
 import com.eostt.memaker.init.ModFoods;
 import com.eostt.memaker.init.ModItems;
+import com.eostt.memaker.network.NetworkBase;
 import com.eostt.memaker.util.IHasModel;
 import net.minecraft.block.Block;
 import net.minecraft.item.Item;
@@ -17,11 +18,18 @@ import net.minecraftforge.common.capabilities.CapabilityManager;
 import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.fml.common.Mod.EventBusSubscriber;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
-
+import net.minecraftforge.fml.common.network.FMLNetworkEvent;
+import net.minecraftforge.fml.common.network.internal.FMLNetworkHandler;
 
 
 @EventBusSubscriber
 public class RegistryHandler {
+    @SubscribeEvent
+    public static void onFMLNetworkRegister(RegistryEvent<Potion> event){
+//        NetworkBase.ThirstyValue.C
+         NetworkBase thirstyValue=new NetworkBase();
+         thirstyValue.registerModels();
+    }
 
 
     @SubscribeEvent

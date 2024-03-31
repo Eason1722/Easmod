@@ -1,6 +1,7 @@
 #items
 item.water_bottle.name= Water Bottle
 item.explosion_apple.name=Explosion Apple
+item.water_drink_bottle=Bottle
 #item tabs
 itemGroup.eostt_tabs=Eason1722's mod
 #blocks

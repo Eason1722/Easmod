@@ -1,6 +1,7 @@
 #items
-item.water-bottle.name=水壶
+item.water_bottle.name=水壶
 item.explosion_apple.name=爆炸苹果
+item.water_drink_bottle.name=水壶
 #item tabs
 itemGroup.eostt_tabs=Eason1722的模组
 #blocks

@@ -31,6 +31,7 @@ public class BottleBase extends ItemBow implements IHasModel {
     public BottleBase(String name, CreativeTabs tabs ,int meta){
         super();
         this.meta=meta;
+        setCreativeTab(tabs);
         setUnlocalizedName(name);
         setRegistryName(name);
         setMaxStackSize(1);
