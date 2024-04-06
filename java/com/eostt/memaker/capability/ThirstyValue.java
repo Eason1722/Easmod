@@ -10,7 +10,7 @@ public class ThirstyValue implements INBTSerializable<NBTTagCompound> {
     @CapabilityInject(ThirstyValue.class)
     public static Capability<ThirstyValue> THIRSTY_VALUE;
     public ThirstyValue(){
-        this.thirstyValue=50.0f;
+        this.thirstyValue=72000.0f;
     }
     private float thirstyValue;
 

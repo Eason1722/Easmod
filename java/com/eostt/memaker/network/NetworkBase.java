@@ -40,7 +40,9 @@ public class NetworkBase implements IHasModel {
                 mc.addScheduledTask(()->{
                     EntityPlayer player=mc.player;
                     ThirstyValue value=player.getCapability(ThirstyValue.THIRSTY_VALUE,null);
-                    value.setThirstyValue(thirstyValue);
+                    if (value != null) {
+                        value.setThirstyValue(thirstyValue);
+                    }
                 });
             }
             public static void sendClientCustomPacket(EntityPlayer player){

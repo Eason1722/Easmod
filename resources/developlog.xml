@@ -1,32 +1,32 @@
-<log>
-    <player35>
-        <removed>
-            recource file can be used
-            <by>
-                change the build configuration
-            </by>
-        </removed>
-        <item>
-            <water_bottle>no use now[May can use as a battery]</water_bottle>
-            <cfe_block>c+fe</cfe_block>
-        </item>
-        <bug>
-            item had a ".name" behind
-            the other don't know
-        </bug>
-        <nextgoal>
-            del ".name"
-        </nextgoal>
-    </player35>
-    <player613>
-        <removed>
-            item del the ".name"
-        </removed>
-        <bug>
-            block only has its ID
-        </bug>
-        <nextgoal>
-            change item name and id reasonable
-        </nextgoal>
-    </player613>
-</log>
+<!--<log>-->
+<!--    <player35>-->
+<!--        <removed>-->
+<!--            recource file can be used-->
+<!--            <by>-->
+<!--                change the build configuration-->
+<!--            </by>-->
+<!--        </removed>-->
+<!--        <item>-->
+<!--            <water_bottle>no use now[May can use as a battery]</water_bottle>-->
+<!--            <cfe_block>c+fe</cfe_block>-->
+<!--        </item>-->
+<!--        <bug>-->
+<!--            item had a ".name" behind-->
+<!--            the other don't know-->
+<!--        </bug>-->
+<!--        <nextgoal>-->
+<!--            del ".name"-->
+<!--        </nextgoal>-->
+<!--    </player35>-->
+<!--    <player613>-->
+<!--        <removed>-->
+<!--            item del the ".name"-->
+<!--        </removed>-->
+<!--        <bug>-->
+<!--            block only has its ID-->
+<!--        </bug>-->
+<!--        <nextgoal>-->
+<!--            change item name and id reasonable-->
+<!--        </nextgoal>-->
+<!--    </player613>-->
+<!--</log>-->

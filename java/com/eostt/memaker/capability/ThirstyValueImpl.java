@@ -15,9 +15,7 @@ import java.util.Objects;
 public class ThirstyValueImpl {
     @SubscribeEvent
     public static void onPlayerRunning(TickEvent.PlayerTickEvent event){
-
         EntityPlayer player=event.player;
-
             ThirstyValue value = player.getCapability(ThirstyValue.THIRSTY_VALUE, null);
 //            value.setThirstyValue(value.getThirstyValue()-0.001f);
             NetworkBase.NetWork.sendClientCustomPacket(player);
