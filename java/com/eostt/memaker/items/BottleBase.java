@@ -5,26 +5,11 @@ import com.eostt.memaker.capability.ThirstyValue;
 import com.eostt.memaker.init.ModItems;
 import com.eostt.memaker.util.IHasModel;
 import net.minecraft.creativetab.CreativeTabs;
-import net.minecraft.enchantment.EnchantmentHelper;
 import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.entity.player.EntityPlayer;
-import net.minecraft.entity.projectile.EntityArrow;
-import net.minecraft.init.Enchantments;
 import net.minecraft.item.ItemBow;
 import net.minecraft.item.ItemStack;
-import net.minecraft.util.ActionResult;
-import net.minecraft.util.EnumActionResult;
-import net.minecraft.util.EnumHand;
 import net.minecraft.world.World;
-import net.minecraftforge.common.capabilities.Capability;
-import net.minecraftforge.fluids.FluidStack;
-import net.minecraftforge.fluids.FluidTankInfo;
-import net.minecraftforge.fluids.FluidUtil;
-import net.minecraftforge.fluids.IFluidTank;
-
-//import javax.annotation.Nullable;
-
-import static net.minecraftforge.common.EnumPlantType.Water;
 
 public class BottleBase extends ItemBow implements IHasModel {
    private int meta;

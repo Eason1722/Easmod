@@ -1,4 +1,5 @@
 package com.eostt.memaker.util.handlers;
+
 import com.eostt.memaker.capability.ThirstyValue;
 import com.eostt.memaker.init.ModBlocks;
 import com.eostt.memaker.init.ModFoods;
@@ -18,8 +19,6 @@ import net.minecraftforge.common.capabilities.CapabilityManager;
 import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.fml.common.Mod.EventBusSubscriber;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
-import net.minecraftforge.fml.common.network.FMLNetworkEvent;
-import net.minecraftforge.fml.common.network.internal.FMLNetworkHandler;
 
 
 @EventBusSubscriber

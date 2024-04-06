@@ -1,14 +1,14 @@
 package com.eostt.memaker.blocks;
 
 import com.eostt.memaker.Main;
+import com.eostt.memaker.init.ModBlocks;
 import com.eostt.memaker.init.ModItems;
 import com.eostt.memaker.util.IHasModel;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
-import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemBlock;
-import com.eostt.memaker.init.ModBlocks;
+
 import static com.eostt.memaker.tabs.EosttTab.EOSTT_TABS;
 
 public class BlockBase extends Block implements IHasModel {

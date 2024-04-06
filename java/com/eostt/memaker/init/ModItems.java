@@ -1,13 +1,8 @@
 package com.eostt.memaker.init;
 
-import com.eostt.memaker.Main;
 import com.eostt.memaker.items.BottleBase;
 import com.eostt.memaker.items.ItemBase;
-import com.eostt.memaker.items.tabs;
-import net.minecraft.client.particle.ParticleDrip;
-import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;
-import net.minecraft.item.ItemBow;
 
 import java.util.ArrayList;
 import java.util.List;

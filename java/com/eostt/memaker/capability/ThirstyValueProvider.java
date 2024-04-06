@@ -1,7 +1,6 @@
 package com.eostt.memaker.capability;
 
 import com.eostt.memaker.util.Reference;
-//import com.eostt.memaker.util.handlers.RegistryHandler;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.nbt.NBTTagCompound;

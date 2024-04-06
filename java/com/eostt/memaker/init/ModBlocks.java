@@ -1,6 +1,5 @@
 package com.eostt.memaker.init;
 
-import com.eostt.memaker.blocks.BlockBase;
 import com.eostt.memaker.blocks.DifficultBlock;
 import net.minecraft.block.Block;
 import net.minecraft.block.SoundType;
