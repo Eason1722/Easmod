@@ -4,6 +4,7 @@ import com.eostt.memaker.network.NetworkBase;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.init.MobEffects;
 import net.minecraft.potion.PotionEffect;
+import net.minecraftforge.event.entity.EntityJoinWorldEvent;
 import net.minecraftforge.event.entity.player.PlayerDestroyItemEvent;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
@@ -36,6 +37,17 @@ public class ThirstyValueImpl {
     @SubscribeEvent
     public static void onPlayerDestroying(PlayerDestroyItemEvent event){
         event.getEntityPlayer().addPotionEffect(new PotionEffect(MobEffects.HASTE,30,(int)(Objects.requireNonNull(event.getEntityPlayer().getCapability(ThirstyValue.THIRSTY_VALUE, null)).getThirstyValue()/24000)));
+    }
+    private static int times=0;
+    @SubscribeEvent
+    public static void onPlayerJoin(EntityJoinWorldEvent event){
+        if(event.getEntity() instanceof EntityPlayer){
+            EntityPlayer player= (EntityPlayer) event.getEntity();
+            times++;
+            if(times==1){
+                player.getCapability(ThirstyValue.THIRSTY_VALUE,null).setThirstyValue(72000.0f);
+            }
+        }
     }
 
 

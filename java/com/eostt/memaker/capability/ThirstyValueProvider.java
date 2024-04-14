@@ -9,6 +9,7 @@ import net.minecraft.util.ResourceLocation;
 import net.minecraftforge.common.capabilities.Capability;
 import net.minecraftforge.common.capabilities.ICapabilitySerializable;
 import net.minecraftforge.event.AttachCapabilitiesEvent;
+import net.minecraftforge.event.entity.EntityJoinWorldEvent;
 import net.minecraftforge.event.entity.player.PlayerEvent;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 import org.jetbrains.annotations.NotNull;
@@ -58,4 +59,8 @@ public class ThirstyValueProvider implements ICapabilitySerializable<NBTTagCompo
             }
         }
     }
+//    @SubscribeEvent
+//    public static void onPLayerJoin(PlayerEvent){
+//
+//    }
 }
