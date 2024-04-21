@@ -1,7 +1,9 @@
 package com.eostt.memaker.util.handlers;
 
-import com.eostt.memaker.capability.ThirstyValue;
+import com.eostt.memaker.capability.CapabilityBase;
+import com.eostt.memaker.capabilityold.ThirstyValue;
 import com.eostt.memaker.init.ModBlocks;
+import com.eostt.memaker.init.ModCapability;
 import com.eostt.memaker.init.ModFoods;
 import com.eostt.memaker.init.ModItems;
 import com.eostt.memaker.network.NetworkBase;
@@ -19,6 +21,9 @@ import net.minecraftforge.common.capabilities.CapabilityManager;
 import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.fml.common.Mod.EventBusSubscriber;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
+import org.jetbrains.annotations.Nullable;
+
+import java.util.concurrent.Callable;
 
 
 @EventBusSubscriber
@@ -33,6 +38,23 @@ public class RegistryHandler {
 
     @SubscribeEvent
     public static void onCapabilityRegister(RegistryEvent.Register<Potion> event){
+//        for (CapabilityBase capability:ModCapability.capabilities
+//             ) {
+//
+//
+//        CapabilityManager.INSTANCE.register(CapabilityBase.class, new Capability.IStorage<CapabilityBase>() {
+//            @Nullable
+//            @Override
+//            public NBTBase writeNBT(Capability<CapabilityBase> capability, CapabilityBase instance, EnumFacing side) {
+//                return null;
+//            }
+//
+//            @Override
+//            public void readNBT(Capability<CapabilityBase> capability, CapabilityBase instance, EnumFacing side, NBTBase nbt) {
+//
+//            }
+//        }, CapabilityBase::new);
+//    }
         CapabilityManager.INSTANCE.register(ThirstyValue.class, new Capability.IStorage<ThirstyValue>() {
             @Override
             public NBTBase writeNBT(Capability<ThirstyValue> capability, ThirstyValue instance, EnumFacing side) {

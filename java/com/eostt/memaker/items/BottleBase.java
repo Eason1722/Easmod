@@ -1,7 +1,7 @@
 package com.eostt.memaker.items;
 
 import com.eostt.memaker.Main;
-import com.eostt.memaker.capability.ThirstyValue;
+import com.eostt.memaker.capabilityold.ThirstyValue;
 import com.eostt.memaker.init.ModItems;
 import com.eostt.memaker.util.IHasModel;
 import net.minecraft.creativetab.CreativeTabs;

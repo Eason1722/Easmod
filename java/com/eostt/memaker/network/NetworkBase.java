@@ -1,6 +1,6 @@
 package com.eostt.memaker.network;
 
-import com.eostt.memaker.capability.ThirstyValue;
+import com.eostt.memaker.capabilityold.ThirstyValue;
 import com.eostt.memaker.util.IHasModel;
 import io.netty.buffer.ByteBuf;
 import io.netty.buffer.Unpooled;

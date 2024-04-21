@@ -1,4 +1,4 @@
-package com.eostt.memaker.capability;
+package com.eostt.memaker.capabilityold;
 
 import net.minecraft.nbt.NBTTagCompound;
 import net.minecraftforge.common.capabilities.Capability;
@@ -11,7 +11,7 @@ public class ThirstyValue implements INBTSerializable<NBTTagCompound> {
     public ThirstyValue(){
         this.thirstyValue=72000.0f;
     }
-    private float thirstyValue;
+    private float thirstyValue=72000.0f;
 
     public float getThirstyValue() {
         return thirstyValue;

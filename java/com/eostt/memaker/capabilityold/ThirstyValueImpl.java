@@ -1,4 +1,4 @@
-package com.eostt.memaker.capability;
+package com.eostt.memaker.capabilityold;
 
 import com.eostt.memaker.network.NetworkBase;
 import net.minecraft.entity.player.EntityPlayer;
@@ -44,8 +44,8 @@ public class ThirstyValueImpl {
         if(event.getEntity() instanceof EntityPlayer){
             EntityPlayer player= (EntityPlayer) event.getEntity();
             times++;
-            if(times==1){
-                player.getCapability(ThirstyValue.THIRSTY_VALUE,null).setThirstyValue(72000.0f);
+            if(times==1&&player.getCapability(ThirstyValue.THIRSTY_VALUE,null)!=null){
+                Objects.requireNonNull(player.getCapability(ThirstyValue.THIRSTY_VALUE, null)).setThirstyValue(72000.0f);
             }
         }
     }

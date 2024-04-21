@@ -1,6 +1,6 @@
 package com.eostt.memaker.client.event;
 
-import com.eostt.memaker.capability.ThirstyValue;
+import com.eostt.memaker.capabilityold.ThirstyValue;
 import com.eostt.memaker.util.Reference;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.gui.ScaledResolution;
@@ -11,11 +11,13 @@ import net.minecraft.util.ResourceLocation;
 import net.minecraftforge.client.event.RenderGameOverlayEvent;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
+import net.minecraftforge.fml.common.gameevent.TickEvent;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
 
 @Mod.EventBusSubscriber
 public class ClientEventHandler {
+
     private static final ResourceLocation TEXTURE_THV=new ResourceLocation(Reference.Mod_ID+":textures/gui/overlay_thv.png");
     @SubscribeEvent
     @SideOnly(Side.CLIENT)
@@ -34,7 +36,7 @@ public class ClientEventHandler {
                     if (thv != null) {
                         thirstyValue = thv.getThirstyValue();
                     }//aminoac
-                    mc.ingameGUI.drawTexturedModalRect(0, height - 40, 0, 4, 20,36);
+                    mc.ingameGUI.drawTexturedModalRect(0, height - 40, 0, (int)(4+thirstyValue/3600), 20,36);
                     mc.ingameGUI.drawString(mc.fontRenderer, ("thirsty value    "+thirstyValue ), 50, height - 24, 0xffffff);
                 }
             }
